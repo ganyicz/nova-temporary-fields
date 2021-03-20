@@ -56,6 +56,8 @@ class User extends Resource
     public function fields(Request $request)
     {
         return [
+          // For the sake of simplicity, I'm not resolving the current price
+        
           Number::make('USD')
             ->required()
             ->temporary(),
